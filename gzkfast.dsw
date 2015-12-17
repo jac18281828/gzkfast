@@ -1,0 +1,89 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "betadecay"=".\win32\betadecay.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name gzkparticle
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "cmbspectrum"=".\win32\cmbspectrum.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name gzkparticle
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "deltadecay"=".\win32\deltadecay.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name gzkparticle
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "gzkfast"=".\win32\gzkfast.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name gzkparticle
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "gzkparticle"=".\win32\gzkparticle.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

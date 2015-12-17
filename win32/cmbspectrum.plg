@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: gzkparticle - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\john\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GR /GX /ZI /Od /I "../include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "GPROTON_EXPORTS" /D DLLEXPORT=__declspec(dllexport) /D _WIN32_WINNT=0x0400 /Fp"Debug/gzkparticle.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\cmb.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\delta.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\mu.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\neutron.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\nu.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\pion.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\pizero.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\gvegas.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\john\LOCALS~1\Temp\RSP94.tmp" 
+Creating temporary file "C:\DOCUME~1\john\LOCALS~1\Temp\RSP95.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/gzkparticled.pdb" /debug /machine:I386 /nodefaultlib:"libcmt" /out:"../lib/gzkparticled.dll" /implib:"../lib/gzkparticled.lib" /pdbtype:sept 
+".\Debug\cmb.obj"
+".\Debug\cmbdist.obj"
+".\Debug\cmbsim.obj"
+".\Debug\delta.obj"
+".\Debug\g4vector.obj"
+".\Debug\gguard.obj"
+".\Debug\ghistogram.obj"
+".\Debug\gloghistogram.obj"
+".\Debug\gmath.obj"
+".\Debug\gmutex.obj"
+".\Debug\grunthread.obj"
+".\Debug\gthread.obj"
+".\Debug\mu.obj"
+".\Debug\neutron.obj"
+".\Debug\nu.obj"
+".\Debug\pion.obj"
+".\Debug\pizero.obj"
+".\Debug\protonspectrum.obj"
+".\Debug\threebodydecay.obj"
+".\Debug\trackparticle.obj"
+".\Debug\twobodydecay.obj"
+".\Debug\gvegas.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\john\LOCALS~1\Temp\RSP95.tmp"
+<h3>Output Window</h3>
+Compiling...
+gvegas.cpp
+c:\documents and settings\john\my documents\projects\gzkfast\include\gvegas.h(31) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+c:\documents and settings\john\my documents\projects\gzkfast\include\gvegas.h(33) : error C2229: class 'GZKFast::GVegas' has an illegal zero-sized array
+c:\documents and settings\john\my documents\projects\gzkfast\include\gvegas.h(75) : error C2061: syntax error : identifier 'GFLota'
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(11) : error C2653: 'GVegas' : is not a class or namespace name
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(11) : error C2065: 'GFloat' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(11) : error C2146: syntax error : missing ')' before identifier 'region'
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(11) : error C2501: 'GVegas' : missing storage-class or type specifiers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(15) : error C2059: syntax error : ')'
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(16) : error C2065: 'alpha' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(16) : error C2501: 'ALPH' : missing storage-class or type specifiers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(17) : error C2065: 'nDimSteps' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(17) : error C2501: 'NDMX' : missing storage-class or type specifiers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(18) : error C2065: 'nDim' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(18) : error C2501: 'MXDIM' : missing storage-class or type specifiers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(19) : error C2065: 'tiny' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(19) : error C2501: 'TINY' : missing storage-class or type specifiers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(20) : error C2065: 'region' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(20) : error C2448: '<Unknown>' : function-style initializer appears to be a function definition
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(41) : error C2653: 'GVegas' : is not a class or namespace name
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(41) : error C2373: 'GVegas' : redefinition; different type modifiers
+        c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(11) : see declaration of 'GVegas'
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(42) : error C2065: 'ia' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(42) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(43) : error C2065: 'kg' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(43) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(45) : error C2065: 'd' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(47) : error C2109: subscript requires array or pointer type
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(47) : error C2109: subscript requires array or pointer type
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(47) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(49) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(51) : error C2065: 'di' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(53) : error C2109: subscript requires array or pointer type
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(53) : error C2109: subscript requires array or pointer type
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(53) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(55) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(57) : error C2065: 'dt' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(57) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(58) : error C2065: 'dx' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(58) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(59) : error C2065: 'r' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(59) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(60) : error C2065: 'x' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(60) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(61) : error C2065: 'xi' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(63) : error C2109: subscript requires array or pointer type
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(63) : error C2109: subscript requires array or pointer type
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(63) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(65) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(67) : error C2065: 'xin' : undeclared identifier
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(67) : error C2541: delete : cannot delete objects that are not pointers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(68) : warning C4508: 'GVegas' : function should return a value; 'void' return type assumed
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(73) : error C2653: 'GVegas' : is not a class or namespace name
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(73) : error C2146: syntax error : missing ';' before identifier 'trialIntegrate'
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(73) : error C2501: 'GFloat' : missing storage-class or type specifiers
+c:\documents and settings\john\my documents\projects\gzkfast\src\gvegas.cpp(73) : fatal error C1004: unexpected end of file found
+cmb.cpp
+c:\program files\microsoft visual studio\vc98\include\new(35) : warning C4290: C++ Exception Specification ignored
+Skipping... (no relevant changes detected)
+delta.cpp
+mu.cpp
+neutron.cpp
+nu.cpp
+pion.cpp
+pizero.cpp
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+cmbspectrum.exe - 52 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

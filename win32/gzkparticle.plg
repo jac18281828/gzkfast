@@ -1,0 +1,92 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: gzkparticle - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\john\LOCALS~1\Temp\RSP8C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GR /GX /ZI /Od /I "../include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D DLLEXPORT=__declspec(dllexport) /D _WIN32_WINNT=0x0400 /Fp"Debug/gzkparticle.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\cmb.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\cmbdist.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\delta.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\eventgenerator.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\evolutionthread.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\interspace.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\mu.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\neutron.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\nu.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\nudetector.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\pion.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\pizero.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\protondetector.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\protonsource.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\protonspectrum.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\threebodydecay.cpp"
+"C:\Documents and Settings\john\My Documents\projects\gzkfast\src\twobodydecay.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\john\LOCALS~1\Temp\RSP8C.tmp" 
+Creating temporary file "C:\DOCUME~1\john\LOCALS~1\Temp\RSP8D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../lib/gzkparticled.pdb" /debug /machine:I386 /nodefaultlib:"libcmt" /out:"../lib/gzkparticled.dll" /implib:"../lib/gzkparticled.lib" /pdbtype:sept 
+".\Debug\cmb.obj"
+".\Debug\cmbdist.obj"
+".\Debug\delta.obj"
+".\Debug\eventgenerator.obj"
+".\Debug\evolutionthread.obj"
+".\Debug\g4vector.obj"
+".\Debug\gguard.obj"
+".\Debug\ghistogram.obj"
+".\Debug\gloghistogram.obj"
+".\Debug\gmath.obj"
+".\Debug\gmutex.obj"
+".\Debug\grunthread.obj"
+".\Debug\gthread.obj"
+".\Debug\gvegas.obj"
+".\Debug\interspace.obj"
+".\Debug\mu.obj"
+".\Debug\neutron.obj"
+".\Debug\nu.obj"
+".\Debug\nudetector.obj"
+".\Debug\pion.obj"
+".\Debug\pizero.obj"
+".\Debug\protondetector.obj"
+".\Debug\protonsource.obj"
+".\Debug\protonspectrum.obj"
+".\Debug\threebodydecay.obj"
+".\Debug\twobodydecay.obj"
+".\Debug\universe.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\john\LOCALS~1\Temp\RSP8D.tmp"
+<h3>Output Window</h3>
+Compiling...
+eventgenerator.cpp
+cmb.cpp
+c:\program files\microsoft visual studio\vc98\include\new(35) : warning C4290: C++ Exception Specification ignored
+cmbdist.cpp
+delta.cpp
+evolutionthread.cpp
+interspace.cpp
+mu.cpp
+neutron.cpp
+nu.cpp
+nudetector.cpp
+pion.cpp
+pizero.cpp
+protondetector.cpp
+protonsource.cpp
+protonspectrum.cpp
+threebodydecay.cpp
+twobodydecay.cpp
+Linking...
+   Creating library ../lib/gzkparticled.lib and object ../lib/gzkparticled.exp
+
+
+
+<h3>Results</h3>
+gzkparticled.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -37,10 +37,11 @@ CPPFLAGS=-DGZKFAST_VERSION=\"${VERSION}\" -Iinclude \
 	-Wconversion -Wshadow \
 	-Wpointer-arith -Wcast-qual -Wcast-align \
 	-Wwrite-strings \
+	-fPIC \
 	-fshort-enums -fno-common ${OPT} # -Dinline= \
 	#	-ansi -pedantic
 
-LDFLAGS=-lpthread -lgsl -lgslcblas -lm
+LDFLAGS=-Wl,-rpath,./lib -lpthread -lgsl -lgslcblas -lm
 
 OBJS=	\
 	src/protonspectrum.o \
@@ -98,35 +99,48 @@ allclean: clean
 	${RM} data/*.grd data/*.log data/*.dat data/*.ps
 
 libgzkparticle: ${OBJS}
-	${CPP} -shared -Wl,-soname,libgzkparticle.so.${MAJOR} -o lib/$@.so.${VERSION} ${OBJS}
+	${CPP} -shared -Wl,-soname,libgzkparticle.so.${MAJOR} \
+		-o lib/$@.so.${VERSION} ${OBJS} ${LDFLAGS}
 	(cd lib && ${LN} -sf $@.so.${VERSION} $@.so.${MAJOR})
 	(cd lib && ${LN} -sf $@.so.${VERSION} $@.so)
 	${AR} rvu lib/$@.a ${OBJS}
 	ranlib lib/$@.a
 
 gzkfast: libgzkparticle utils/gzkfast.o 
-	${CPP} ${LDFLAGS} -L./lib -lgzkparticle ${CPPFLAGS} utils/gzkfast.o \
-		-o bin/$@ 
+	${CPP} ${CPPFLAGS} \
+		utils/gzkfast.o \
+		-o bin/$@ \
+		${LDFLAGS} -L./lib -lgzkparticle 
 
 deltadecay: libgzkparticle utils/deltadecay.o 
-	${CPP} ${LDFLAGS} -L./lib -lgzkparticle ${CPPFLAGS} utils/deltadecay.o \
-		-o bin/$@ 
+	${CPP} ${CPPFLAGS} \
+		utils/deltadecay.o \
+		-o bin/$@ \
+		${LDFLAGS} -L./lib -lgzkparticle 
 
 betadecay: libgzkparticle utils/betadecay.o 
-	${CPP} ${LDFLAGS} -L./lib -lgzkparticle ${CPPFLAGS} utils/betadecay.o \
-		-o bin/$@ 
+	${CPP} ${CPPFLAGS} \
+		 utils/betadecay.o \
+		-o bin/$@ \
+		${LDFLAGS} -L./lib -lgzkparticle 
 
 cmbspectrum: libgzkparticle utils/cmbspectrum.o 
-	${CPP} ${LDFLAGS} -L./lib -lgzkparticle ${CPPFLAGS} utils/cmbspectrum.o \
-		-o bin/$@ 
+	${CPP} ${CPPFLAGS} \
+		utils/cmbspectrum.o \
+		-o bin/$@ \
+		${LDFLAGS} -L./lib -lgzkparticle 
 
 cmbdensity: libgzkparticle utils/cmbdensity.o 
-	${CPP} ${LDFLAGS} -L./lib -lgzkparticle ${CPPFLAGS} utils/cmbdensity.o \
-		-o bin/$@ 
+	${CPP} ${CPPFLAGS} \
+		utils/cmbdensity.o \
+		-o bin/$@ \
+		${LDFLAGS} -L./lib -lgzkparticle 
 
 meanpath: libgzkparticle utils/meanpath.o 
-	${CPP} ${LDFLAGS} -L./lib -lgzkparticle ${CPPFLAGS} utils/meanpath.o \
-		-o bin/$@ 
+	${CPP} ${CPPFLAGS} \
+		utils/meanpath.o \
+		-o bin/$@ \
+		${LDFLAGS} -L./lib -lgzkparticle 
 
 src/pion.o: src/pion.cpp
 	${CPP} ${CPPFLAGS} -c -o $@ $<

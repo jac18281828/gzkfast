@@ -7,7 +7,7 @@ branches:
 language: c++
 
 install:
-  - apt install gsl
+  - sudo apt install libgsl-dev
 
 script:
 - make -j

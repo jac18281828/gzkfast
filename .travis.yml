@@ -1,0 +1,13 @@
+os: linux
+
+branches:
+  only:
+  - master
+
+language: c++
+
+install:
+  - apt install gsl
+
+script:
+- make -j

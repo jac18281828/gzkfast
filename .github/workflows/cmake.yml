@@ -13,9 +13,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Create Build Environment
+    - name: Install Gnu Scientific Library
       run: sudo apt install libgsl-dev
 
+
+    - name: Create Build Environment
       run: cmake -E make_directory ${{runner.workspace}}/build
 
     - name: Configure CMake

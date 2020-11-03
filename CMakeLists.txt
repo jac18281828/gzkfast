@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.9)
+
+project(gzkfast)
+
 set(CMAKE_VERBOSE_MAKEFILE on)
 SET(CMAKE_CXX_FLAGS_RELEASE -O3)
 SET(CMAKE_CXX_FLAGS_DEBUG "-g -DGZKFAST_DEBUG=1")

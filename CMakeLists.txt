@@ -13,8 +13,6 @@ SET(HEADER include/bfieldspace.h include/cmbdist.h include/cmb.h include/delta16
 
 SET(SRC src/bfieldspace.cpp src/cmb.cpp src/cmbdist.cpp src/delta1600.cpp src/delta.cpp src/deltaspectrum.cpp src/electron.cpp src/eventgenerator.cpp src/evolutionthread.cpp src/g4vector.cpp src/gerror.cpp src/gguard.cpp src/ghistogram.cpp src/gintegrate.cpp src/gloghistogram.cpp src/gmath.cpp src/gmutex.cpp src/grotation.cpp src/grunthread.cpp src/gthread.cpp src/mu.cpp src/neutron.cpp src/nu.cpp src/nudetector.cpp src/particle.cpp src/photon.cpp src/photondetector.cpp src/pion.cpp src/pizero.cpp src/proton.cpp src/protondetector.cpp src/protonsource.cpp src/protonspectrum.cpp src/sphere.cpp src/threebodydecay.cpp src/twobodydecay.cpp src/universe.cpp src/z.cpp)
 
-find_package(Threads REQUIRED)
-
 include_directories(gzkparticle include)
 
 add_library(gzkparticle SHARED ${HEADER} ${SRC})

@@ -14,7 +14,9 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install Gnu Scientific Library
-      run: sudo apt install g++ cmake libgsl-dev
+      run: |
+           sudo apt update
+           sudo apt install build-essential g++ cmake libgsl-dev
 
 
     - name: Create Build Environment
